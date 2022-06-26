@@ -1,0 +1,22 @@
+@import "src/variables.scss";
+
+.navigation-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: $main-blue;
+    color: white;
+    font-size: large;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+
+.navigation-item {
+    &:hover {
+        color: darken($off-white, 20%);
+        cursor: pointer;
+    }
+}
