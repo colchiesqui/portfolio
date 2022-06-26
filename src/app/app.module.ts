@@ -11,6 +11,7 @@ import { TechnologiesPageComponent } from './pages/technologies-page/technologie
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
 import { TestimonialsPageComponent } from './pages/testimonials-page/testimonials-page.component';
 import { AboutMePageComponent } from './pages/about-me-page/about-me-page.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AboutMePageComponent } from './pages/about-me-page/about-me-page.compon
     TechnologiesPageComponent,
     PortfolioPageComponent,
     TestimonialsPageComponent,
-    AboutMePageComponent
+    AboutMePageComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,
