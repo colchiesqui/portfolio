@@ -6,7 +6,6 @@
     align-items: flex-end;
     width: 100%;
     gap: 1.5rem;
-    padding: 1rem;
     background-color: $main-blue;
     color: white;
     font-size: large;
@@ -16,8 +15,40 @@
 }
 
 .navigation-item {
+    padding: 0.8rem;
     &:hover {
         color: darken($off-white, 20%);
         cursor: pointer;
+    }
+
+    border-bottom: 2px solid transparent;
+}
+
+.active-link {
+    border-bottom: 2px solid $off-white;
+}
+
+.hamburguer-menu {
+    padding: 0.8rem;
+    &:hover {
+        color: darken($off-white, 20%);
+        cursor: pointer;
+    }
+
+    border-bottom: 2px solid transparent;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .navigation-item {
+        display: none;
+    }
+    .mobile-navigation {
+        display: flex;
+        background-color: $main-blue;
+        color: $off-white;
     }
 }

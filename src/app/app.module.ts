@@ -12,6 +12,8 @@ import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.co
 import { TestimonialsPageComponent } from './pages/testimonials-page/testimonials-page.component';
 import { AboutMePageComponent } from './pages/about-me-page/about-me-page.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './shared/modules/material/material.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { UnderConstructionComponent } from './under-construction/under-construct
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

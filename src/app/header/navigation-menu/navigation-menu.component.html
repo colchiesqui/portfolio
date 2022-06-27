@@ -1,5 +1,23 @@
 <div class="navigation-menu">
-    <div *ngFor="let navigationItem of navigationItems" class="navigation-item" routerLink={{navigationItem.link}}>
+    <div
+        *ngFor="let navigationItem of navigationItems"
+        routerLinkActive="active-link"
+        class="navigation-item"
+        routerLink={{navigationItem.link}}
+    >
         {{navigationItem.title}}
     </div>
 </div>
+<div class="mobile-navigation">
+    <div class="hamburguer-menu">
+        <mat-icon aria-hidden="false" [matMenuTriggerFor]="menu" aria-label="Menu icon">menu</mat-icon>
+    </div>
+</div>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item *ngFor="let navigationItem of navigationItems"
+        routerLinkActive="active-link"
+        routerLink={{navigationItem.link}}>
+        <span>{{navigationItem.title}}</span>
+    </button>
+</mat-menu>

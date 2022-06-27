@@ -11,9 +11,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // color: $off-white;
     font-weight: 600;
     font-family: "Basilisk";
     color: $main-orange;
     font-size: 4.5rem;
+    line-height: 4rem;
+    overflow: hidden;
 }
