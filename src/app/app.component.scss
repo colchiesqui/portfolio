@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.wrapper .row {
+  border: 1px dotted grey;
+}
+
+.wrapper .row.header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.wrapper .row.content {
+  flex: 1 1 auto;
+}
+
+.wrapper .row.footer {
+  flex: 0 1 40px;
+}

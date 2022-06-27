@@ -1,0 +1,19 @@
+@import 'src/variables.scss';
+
+.under-construction-banner {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // color: $off-white;
+    font-weight: 600;
+    font-family: "Basilisk";
+    color: $main-orange;
+    font-size: 4.5rem;
+}
